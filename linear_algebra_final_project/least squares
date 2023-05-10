@@ -1,0 +1,30 @@
+data:
+    x: sequence
+    y: sequence
+
+x's are independent values (exact data)
+y's are depended values (noisy data)
+
+line:
+
+    eq =  y_intercept + slope * x
+
+    y_1 = y_intercept + slope * x_1
+    y_2 = y_intercept + slope * x_2
+    y_3 = y_intercept + slope * x_3
+    .
+    .
+    y_n = y_intercept + slope * x_n
+______________________________________________________
+    matrix form
+
+    |y_1|       |1, x_1|
+    |y_2|       |1, x_2|
+    |y_3|       |1, x_3|      |y_intercept|
+    .       =               * |           |
+    .                         |   slope   |
+    .
+    |y_n|       |1, n_n|
+
+    solve
+    B     =     A      *      b
