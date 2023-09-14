@@ -21,7 +21,8 @@ class Model:
             x_sum += x ** 2
             y_sum += y ** 2
             xy_sum += x * y
-        R = (N * self.__x_mean - self.__y_mean - xy_sum) / ((N * x_sum - self.__x_sum ** 2) ** .5 * (N * y_sum - self.__y_sum ** 2) ** .5)
+        R = (N * self.__x_mean - self.__y_mean - xy_sum) / (
+                (N * x_sum - self.__x_sum ** 2) ** .5 * (N * y_sum - self.__y_sum ** 2) ** .5)
         ...
 
     @staticmethod
