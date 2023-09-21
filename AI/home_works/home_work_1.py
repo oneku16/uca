@@ -36,11 +36,11 @@ def reflex_vacuum_agent(location: str, status: str) -> object:
     return vacuum.move(location=location, direction='left', status=status.lower())
 
 
-def main():
-    location_instance = Location()
-    location, status = location_instance()
-    reflex_vacuum_agent(location=location, status=status)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     location_instance = Location()
+#     location, status = location_instance()
+#     reflex_vacuum_agent(location=location, status=status)
+#
+#
+# if __name__ == '__main__':
+#     main()
